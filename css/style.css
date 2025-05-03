@@ -131,7 +131,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.hero-right {
+.hero-right {       /* vertical layout for the entire column */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +140,7 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.hero-heading {
+.hero-heading {        /*orizontal layout for title */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -148,15 +148,19 @@ nav ul li a:hover {
 
 .hero-heading h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
+    color: var(--text-gray);
+    line-height: 1.2;
 }
 
-.hero-subheading {
-    font-size: 1.5rem;
+.hero-subheading h2 {
+    margin: 10px 0;
+    font-size: 2rem;
     font-weight: normal;
-    max-width: 500px;
-    
+    color: var(--text-gray);
+    line-height: 1.6;
+
 }
 
 
@@ -171,7 +175,8 @@ nav ul li a:hover {
 /* Animation from Website: https://codepen.io/einargudnig/pen/YzNeZOG 
    Used to animate waving hand */
 .wave-hand {
-    animation-name: wave-animation;
+  font-size: 3rem;
+  animation-name: wave-animation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;

@@ -1,0 +1,229 @@
+:root {
+    --white: #ffffff;
+    --cream: #fff9ec;
+    --washi-beige: #f5f0e6;
+    --sakura-pink: #fbeaea;
+    --matcha-green: #dfe8c5;
+    --seafoam-blue: #e4f1f9;
+    --text-gray: #555555;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+   background-color: var(--washi-beige);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   height: 100px;
+   gap: 20px;
+ 
+}
+
+.header-left,
+.header-center,
+.header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    justify-content: flex-start;
+}
+
+.header-center {
+    justify-content: center;
+    text-align: center;
+}
+
+.header-right {
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.logo {
+   height: 80px;
+}
+
+
+.social-icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;           /* Space between the icons */
+}
+
+.social-icons img,
+.social-icons a {
+    width: 20px;
+    height: 20px;
+}
+
+
+body {
+  font-family: 'Open Sans';
+  background-color: var(--white);
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+header,footer {
+    background-color: var(--washi-beige);
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top:auto;
+}
+
+/* Titols */
+h1, h2, h3 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    color: var(--text-gray);
+}
+
+/* Navbar */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-gray);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 20px;
+}
+
+.hero-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+}
+
+.hero-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-heading h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-subheading {
+    font-size: 1.5rem;
+    font-weight: normal;
+    max-width: 500px;
+    
+}
+
+
+
+.hand-top-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* push the wave hand to the right */
+    margin-bottom: 10px;  /* add space between the wave hand and the big title */
+}
+
+/* Animation from Website: https://codepen.io/einargudnig/pen/YzNeZOG 
+   Used to animate waving hand */
+.wave-hand {
+    animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  15% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+  30% { transform: rotate(-8.0deg) }
+  40% { transform: rotate(14.0deg) }
+  50% { transform: rotate(-4.0deg) }
+  60% { transform: rotate(10.0deg) }
+  70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+ 100% { transform: rotate( 0.0deg) }
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: var(--matcha-green);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--text-gray);
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid var(--text-gray);
+}
+
+
+footer {
+    background-color: var(--washi-beige);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+

@@ -380,7 +380,7 @@ nav ul li a:hover {
 /* --------- PROJECTS SECTION --------- */
 
 .projects-section {
-    padding: 60px 40px;
+    padding: 20px 40px;
 }
 
 .section-heading {
@@ -468,6 +468,19 @@ nav ul li a:hover {
     background-color: var(--cream);
 }
 
+
+/* --------- CONTACT ME SECTION --------- */
+
+#contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
 
 
 

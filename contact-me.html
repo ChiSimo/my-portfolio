@@ -52,27 +52,44 @@
 <!-- Contact Me Section -->
 <main>
   <section id="contact-me" class="contact-section">
-   <h2 class="section-heading">
+
+    <h2 class="section-heading">
     <span class=underline-span>CONTACT ME</span>
    </h2>
-   <p class="contact-subtitle">Let's Work Together... Happy to Chat about <strong>PROJECTS, IDEAS</strong> or just to say Hi!</p>
+   <p class="contact-subtitle">
+    Let's Work Together... Happy to Chat about <strong>PROJECTS, IDEAS</strong> or just to say Hi!
+  </p>
 
-   <div class="contact-wrapper">
+   <div class="container">
+   <div class="contact-container">
+
+    <!-- Form -->
     <form class="contact-form">
-      <label>NAME</label>
-      <input type="text" placeholder="Your Name..." required>
 
-      <label>E-MAIL</label>
-      <input type="text" placeholder="Your E-mail..." required>
+     <div class="align">
+      <label for="NAME">NAME</label>
+      <input type="text" id="name" placeholder="Your Name..." required>
+    </div>
 
-      <label>PHONE</label>
-      <input type="text" placeholder="Your Phone...">
+    <div class="align">
+      <label for="E-MAIL">E-MAIL</label>
+      <input type="text" id="E-mail" placeholder="Your E-mail..." required>
+    </div>
 
-      <label>COMPANY</label>
-      <input type="text" placeholder="Company name...">
+    <div class="align"> 
+    <label for="PHONE">PHONE</label>
+      <input type="text" id="phone" placeholder="Your Phone...">
+    </div>
 
-      <label>MESSAGE</label>
-      <textarea placeholder="Write your messahe here..." required></textarea>
+    <div class="align">
+      <label for="COMPANY">COMPANY</label>
+      <input type="text" id="company" placeholder="Company name...">
+    </div>
+
+    <div class="align">
+    <label for="MESSAGE">MESSAGE</label>
+      <textarea id="message" placeholder="Write your messahe here..." required></textarea>
+    </div>
 
       <button type="submit">Let's Talk 📨</button>
 
@@ -80,15 +97,20 @@
 
     <div class="divider">OR</div>
 
-    <div class="contact-balloons">
+    <div class="contact-bubbles">
+      <img src="images/speech-bubbles.png" alt="Info speech bubbles" class="bubbles-img">
+      <div class="bubble-text">
       <p><strong>simochiay@gmail.com</strong></p>
       <p>Ph: 0452051875</p>
+    </div> 
+  </div>
 
+      </div>
+     </div>
     </div>
-   </div>
-   </section>
+  </section>
+<main>
 
-   
 <!--Footer-->
   <footer id="footer">
     <div class="footer-left">Australia 🌎</div>

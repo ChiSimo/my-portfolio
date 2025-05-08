@@ -377,7 +377,96 @@ nav ul li a:hover {
     background-color: var(--seafoam-blue);
 }
 
+/* --------- PROJECTS SECTION --------- */
 
+.projects-section {
+    padding: 60px 40px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--text-gray);
+    margin-bottom: 10px;
+}
+
+.underline-span {
+    border-bottom: 5px solid #fbeaea;
+    padding-bottom: 4px;
+}
+
+.card-wrapper {
+    max-width: 1200px;
+    margin-bottom: 0 auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    flex: 1 1 calc(20% -30px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-height: 250px;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 8px; 
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+
+.card h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--text-gray);
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+    color: var(--text-gray);
+}
+
+.card.portfolio {
+    background-color: var(--seafoam-blue);
+}
+
+.card.pop-art {
+    background-color: var(--matcha-green);
+}
+
+.card.tables {
+    background-color: var(--sakura-pink);
+}
+
+.card.to-be-created {
+    background-color: var(--cream);
+}
 
 
 
